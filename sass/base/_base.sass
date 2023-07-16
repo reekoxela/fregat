@@ -1,0 +1,90 @@
+//Шрифты
+@font-face
+    font-family: 'Gilroy'
+    src: local('Gilroy')
+    src: url('../fonts/Gilroy-Light.woff')
+    font-weight: 300
+    font-style: normal
+
+@font-face
+    font-family: 'Gilroy'
+    src: local('Gilroy')
+    src: url('../fonts/Gilroy-Regular.woff')
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: 'Gilroy'
+    src: local('Gilroy')
+    src: url('../fonts/Gilroy-Medium.woff')
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: 'Gilroy'
+    src: local('Gilroy')
+    src: url('../fonts/Gilroy-SemiBold.woff')
+    font-weight: 600
+    font-style: normal
+
+@font-face
+    font-family: 'Gilroy'
+    src: local('Gilroy')
+    src: url('../fonts/Gilroy-Bold.woff')
+    font-weight: 700
+    font-style: normal
+
+@font-face
+    font-family: 'Book Antiqua'
+    src: local('Book Antiqua')
+    src: url('../fonts/BKANT.TTF')
+    font-weight: 400
+    font-style: normal
+    
+//Базовые стили
+body
+    font-family: $font-main
+    background-color: $clr_background
+
+//размер контейнера 1520, но padding 2х15 съедают внутреннюю часть из-за box-sizing: border-box
+.container
+    margin: 0 auto
+    padding: 0 15px
+    max-width: 1550px
+
+.visually-hidden
+    height: 1px
+    overflow: hidden
+    width: 1px
+
+    position: absolute
+
+    clip: rect(1px 1px 1px 1px)
+    clip: rect(1px 1px 1px 1px)
+    clip-path: inset(50%)
+
+    white-space: nowrap
+
+.none
+    display: none !important
+
+/* Заголовок */
+.title
+    font-family: $font-title
+    font-style: normal
+    font-weight: 400
+    font-size: 65px
+    line-height: 72px
+    color: $clr_title
+
+/* Подзаголовок */
+.subtitle
+    font-family: $font-main
+    font-style: normal
+    font-weight: 500
+    font-size: 35px
+    line-height: 42px
+    color: $clr_subtitle
+
+.no-scroll
+    overflow-y: hidden

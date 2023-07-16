@@ -1,0 +1,99 @@
+.contacts
+    margin-bottom: 200px
+
+    &__title
+        margin-bottom: 50px
+
+    &__links
+        margin-bottom: 25px
+
+    &__link
+        font-weight: 600
+        font-size: 25px
+        line-height: 31px
+        color: $clr_title
+        margin-right: 50px
+
+        &:hover
+            color: $clr_button
+
+        &:last-child
+            margin-right: 0
+
+    &__wrapper
+        display: flex
+        gap: 100px
+
+    &__item
+        margin-bottom: 40px
+        dl
+            font-weight: 400
+            font-size: 25px
+            line-height: 110%
+            color: #959699
+            margin-bottom: 12px
+        
+        dd, a
+            font-weight: 600
+            font-size: 20px
+            line-height: 32px
+            color: #121212
+
+        a:hover
+           color: $clr_button 
+            
+    &__phone
+        position: relative
+        &::before
+            content: url('../icons/contacts/phone.svg')
+            position: absolute
+            left: -10%
+        
+    &__mail
+        position: relative
+        &::before
+            content: url('../icons/contacts/letter.svg')
+            position: absolute
+            left: -10%
+
+    &__office
+        position: relative
+        &::before
+            content: url('../icons/contacts/office.svg')
+            position: absolute
+            left: -10%
+
+    &__base
+        position: relative
+        &::before
+            content: url('../icons/contacts/base.svg')
+            position: absolute
+            left: -10%
+
+    &__write
+        font-weight: 600
+        font-size: 20px
+        line-height: 32px
+        color: #121212
+
+    &__whatsapp
+        padding-left: 30px
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        text-decoration-line: underline !important
+        color: #121212
+        position: relative
+        
+        &::before
+            content: url('../icons/contacts/whatsapp.svg')
+            position: absolute
+            left: 5px
+            top: 3px
+
+        &:hover
+            color: $clr_button
+
+.map
+    height: 700px
+    width: 870px
